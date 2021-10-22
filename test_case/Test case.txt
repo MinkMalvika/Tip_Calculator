@@ -1,0 +1,18 @@
+Project Name: Tip Calculator
+Technology: Javascript
+Project Duration: 6Days
+
+Functional Requirements:
+The application provides option forthe user to specify
+-Bill Amount
+-Tip %
+-Number of people
+The application displays the output based on inputs
+-Tip amount per person
+-Total amount per person
+
+Non Functional Requirements:
+-Application should be responsive
+
+Test Case document:
+https://docs.google.com/spreadsheets/d/1_9sA41PM2IV3_-v9RRC3pP_oepHa4dMyJQMBBqDBPgk/edit?usp=sharing 
