@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip_Calculator</title>
+    <!-- Google Font -->
+
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Container class -->
+    <div class="container">
+      <!-- Heading of application -->
+      <div class="heading">tip calculator</div>
+      <!-- end of heading class -->
+
+      <!-- Content where input will be taken and output i.e. tip per person will be displayed -->
+      <div class="content">
+        <!-- inputs will be taken from user -->
+        <div class="input_container">
+          <!-- Bill container -->
+          <div class="bill_container">
+            <div class="label_wrapper">
+              <label for="inp_bill">Bill</label>
+            </div>
+            <div class="inp_wrapper">
+              <input
+                class="inp_text"
+                type="text"
+                name="inp_bill"
+                id="inp_bill"
+                placeholder="0.0"
+              />
+            </div>
+          </div>
+
+          <div class="tip_container">
+            <div class="label_wrapper">
+              <label for="inp_tip">Select Tip %</label>
+            </div>
+            <div class="btn_wrapper">
+              <div class="btn tip">5%</div>
+              <div class="btn tip">10%</div>
+              <div class="btn tip btn_active">15%</div>
+              <div class="btn tip">25%</div>
+              <div class="btn tip">50%</div>
+              <input
+                class="inp_text"
+                type="text"
+                name="inp_tip"
+                id="inp_tip"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+
+          <div class="people_container">
+            <div class="label_wrapper">
+              <label for="inp_people">Number of People</label>
+              <div class="error_msg">Can't be zero</div>
+            </div>
+
+            <div class="inp_wrapper">
+              <input
+                class="inp_text"
+                type="text"
+                name="inp_people"
+                id="inp_people"
+                placeholder="1"
+              />
+            </div>
+          </div>
+          <!-- <div class="btn calculate" id="calculate">Calculate</div> -->
+        </div>
+        <!-- end of input class -->
+
+        <!-- output will be displayed to user -->
+        <div class="output_container">
+          <div class="output_wrapper">
+            <div class="output">
+              <div class="title_wraper">
+                <div class="title">Tip Amount</div>
+                <div class="desc" id="each">/ person</div>
+              </div>
+              <div class="value" id="tip_amt">0.00</div>
+            </div>
+            <div class="output">
+              <div class="title_wraper">
+                <div class="title">Total</div>
+                <div class="desc" id="each">/ person</div>
+              </div>
+              <div class="value" id="total_amt">0.00</div>
+            </div>
+          </div>
+          <div class="btn reset">Reset</div>
+        </div>
+        <!-- end of output class -->
+      </div>
+    </div>
+
+    <!-- javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
